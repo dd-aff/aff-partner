@@ -28,21 +28,20 @@
                       }
 
               function change_book(a) {
-
-              if (a == 0) {
+                if (a == 0) {
                   ch++; //下一章                   
-              } 	 
-              else
-              artt = a;
-                    $("#reading_iframe").load("class/"+book + "/" + artt + "_3.html");
-                    //loc = "class/" + book + "/" + artt + "_" + level + ".htm";
-              // locat();
-              loc = "class/" + book + "/" + artt + "_3.html";
-                    console.log(loc)
-                    $('#read_iframe').attr('src', loc);
-                    location.href = "#start"  
-                      }
-
+                }
+                else{
+                  artt = a;
+                  //$("#reading_iframe").load("class/"+book + "/" + artt + "_3.html");
+                  //loc = "class/" + book + "/" + artt + "_" + level + ".htm";
+                  loc = "class/" + book + "/" + artt + "_3.html";
+                  console.log(loc)
+                  $('#read_iframe').attr('src', loc);
+                  location.href = "#start"
+                  // locat();
+                }
+              }
                       
   </script>
   <!-- Template CSS -->
